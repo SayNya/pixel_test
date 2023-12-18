@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "pixel-test"
+version = "0.1.0"
+description = ""
+authors = ["Lapitski Alexei <alexeylapitski@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^2.5.2"
+pydantic-settings = "^2.1.0"
+python-dotenv = "^1.0.0"
+asyncpg = "^0.29.0"
+loguru = "^0.7.2"
+alembic = "^1.13.0"
+solidity-parser = "^0.1.1"
+celery = "^5.3.6"
+sqlalchemy = {extras = ["asyncio"], version = "^2.0.23"}
+pygithub = "^2.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
