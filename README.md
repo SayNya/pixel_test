@@ -17,6 +17,10 @@
 poetry install
 docker compose up -d
 ```
+Создать файл .env на подобии .env.example и применить миграции
+```sh
+make migrate
+```
 И запустить воркер с планировщиком.
 ```sh
 celery -A src.main.app worker -B
